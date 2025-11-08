@@ -1,0 +1,3 @@
+public enum Category {
+    PIZZA, CHICKEN, MEAT, BURGER, DRINK, DESSERT, OTHER,SALAD
+}
