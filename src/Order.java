@@ -24,9 +24,4 @@ public class Order {
     public double getSubTotal() { return sub_total; }
     public int getOrderId() { return orderID; }
 
-    // Apply a discount to the order
-//    public void applyDiscount(double discount){
-//       total-=discount;
-//    }
-
 }

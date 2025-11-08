@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.List;
 
 // this is concrete factory type of menue that has specific items in it
-public class VegMenueFactory implements MenueFactory{
-    public List<MenuItem> createMenue(){
+public class VegMenuFactory implements MenuFactory {
+    public List<MenuItem> createMenu(){
         return Arrays.asList(
         new SimpleMenuItem("Veg Pizza",Category.PIZZA,8.0),
                 new SimpleMenuItem("Veg Salad",Category.SALAD,6.0)

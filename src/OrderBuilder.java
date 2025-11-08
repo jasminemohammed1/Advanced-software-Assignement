@@ -20,4 +20,7 @@ public class OrderBuilder {
     {
         return new Order(items,orderType);
     }
+    public List<MenuItem> getItems() {
+        return items;
+    }
 }

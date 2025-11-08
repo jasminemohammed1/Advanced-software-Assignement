@@ -1,9 +1,9 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class NonVegMenueuFactory implements MenueFactory{
+public class NonVegMenuFactory implements MenuFactory {
     @Override
-    public List<MenuItem> createMenue() {
+    public List<MenuItem> createMenu() {
         return Arrays.asList(
                 new SimpleMenuItem("Chicken Pizza", Category.PIZZA, 10.0),
                 new SimpleMenuItem("Beef Burger", Category.BURGER, 9.0)
