@@ -113,5 +113,5 @@ The system's discount logic is controlled by the **Strategy** pattern. The `Disc
 * **Strategy (`PaymentStategy`, `DiscountStrategy`, `TaxStrategy`):** Decouples algorithms for payments, discounts, and taxes, making them interchangeable and extensible (OCP).
 * **Observer (`OrderProcessingService`, `OrderObserver`):** Allows `KitchenObserver` and `WaiterObserver` to subscribe to order events without coupling them to the order-placing logic.
 * **Decorator (`AddonDecorator`):** Allows dynamically adding new "toppings" (both cost and description) to `MenuItem` objects at runtime.
-* **Abstract Factory (`MenueFactory`):** Provides an interface for creating *families* of related menu items (Veg, NonVeg) without specifying their concrete classes.
+* **Abstract Factory (`MenuFactory`):** Provides an interface for creating *families* of related menu items (Veg, NonVeg) without specifying their concrete classes.
 * **Builder (`OrderBuilder`):** Simplifies the creation of a complex `Order` object by using a step-by-step, fluent interface.
