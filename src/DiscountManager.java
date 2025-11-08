@@ -1,14 +1,12 @@
-import java.util.Arrays;
 import java.util.List;
 
 public class DiscountManager {
 
-    private  final List<DiscountStrategy>strategies= Arrays.asList(
-     new PizzaDiscount(),
-     new ChickenDiscount()
-    );
+    private  final List<DiscountStrategy> strategies;
 
-
+    public DiscountManager(List<DiscountStrategy> strategies) {
+        this.strategies = strategies;
+    }
     public double getTotalDiscount(List<MenuItem>items)
     {
         return items.stream()
